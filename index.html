@@ -58,6 +58,7 @@
 
 		//creates the SVG element and returns it
 		var makeSVG = function(tag, attrs) {
+
 	        var el= document.createElementNS('http://www.w3.org/2000/svg', tag);
 	        for (var k in attrs)
 	        {
@@ -99,6 +100,9 @@
 		playground.createNewCircle(e.x,e.y);
 	}
 	
+	document.getElementById('svg').setAttribute("height", "100%");
+	document.getElementById('svg').setAttribute("width", "100%");
+
 	</script>
 
 </body>
